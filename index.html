@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href=".//Styles/main.css">
+        <script type="text/javascript" src=".//JS/main.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Ian Maze | Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="setup()">
+        <! --- Video Background --->
+        <div class="fullscreen-bg">
+            <video loop muted autoplay class="fullscreen-bg__video">
+                <source src=".//Videos/neon2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <! --- Nav Menu --->
+        <nav class="navbar sticky-top justify-content-space-between navbar-dark bg-dark">
+            <h1 class="MenuTitle">Ian Maze | Software Developer</h1>
+            <img id="hamburger" onclick="hamburgerClick()" src="./Images/hamburger.png">
+            <img id="close" onclick="closeClick()" src="./Images/close.png">
+        </nav>
+        <div id="nav-box">
+            <ul class="nav nav-tabs justify-content-end bg-dark" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="./index.html" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="./projects.html" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="./contact.html" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        <div class="row align-middle" id="content-top">
+          <div class="col-5">
+          <img id="developer-img" src="./Images/selfpic1.png">
+          </div>
+          <div class="col-7" id="aboutme">
+          <p>Thanks for Stopping By!</p><br>
+          <h1>About Me</h1><br>
+          <p>My name is Ian,</p>
+          <p>I'm a programming student seeking a developer position in a fast-growing organization to utilize expertise in software 
+          development and testing, as well as deployment and support using agile development methodologies. 
+          Coming with skills in computer programming in addition to excellent communication skills.</p>
+          <p>Please feel free to look through my online portfolio for projects I have created and contact information if interested in my services</p>
+          </div>
+        </div>
+    </body>
+</html>
