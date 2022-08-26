@@ -50,16 +50,26 @@ p {
 /*------------- content main ------------*/
 
 #content-top {
+  width: 55%;
   background-color: rgb(44,84,148);
   padding: 1%;
-  margin-top: 15%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 15px;
 }
 
 #content-top-contact {
+  width: 55%;
   background-color: rgb(44,84,148);
   padding: 1%;
-  margin-top: 25%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 15px;
 }
 
@@ -144,4 +154,3 @@ p {
   margin: 5% auto;
   border-radius: 15px;
 }
-
