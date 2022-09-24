@@ -1,40 +1,187 @@
 
-//Functions for hamburger click
-//-----------------------------
+/*----------- Video Background -----------*/
 
-function setup() {
-    unfade(document.getElementById("hamburger"));
-    document.getElementById("hamburger").style.display = "block";
-    document.getElementById("close").style.display = "none";
-    document.getElementById("nav-box").style.display = "none";
+.fullscreen-bg {
+    position: fixed;
+    z-index: -100;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-function hamburgerClick() {
-    document.getElementById("hamburger").style.display = "none";
-    document.getElementById("close").style.display = "block";
-    unfade(document.getElementById("close"));
-    document.getElementById("nav-box").style.display = "block";
-    
+.fullscreen-bg__video {
+  position: absolute;
 }
 
-function unfade(element) {
-    var op = 0.1;  // initial opacity
-    element.style.display = 'block';
-    var timer = setInterval(function () {
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
-    }, 35);
+/*----------- body -----------*/
+body {
+  background-color: blue;
 }
 
-function closeClick() {
-    unfade(document.getElementById("hamburger"));
-    document.getElementById("hamburger").style.display = "block";
-    document.getElementById("close").style.display = "none";
-    document.getElementById("nav-box").style.display = "none";
+p {
+  color:white;
 }
-//--------------------------------
+
+/*------------- Nav ------------*/
+.MenuTitle 
+{
+  color: azure;
+}
+
+#nav {
+  background-color: rgb(44,84,148);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#nav-box 
+{
+  position: fixed;
+  background-color: rgb(44,84,148);
+  text-align: center;
+  border-radius: 0 0 0 5px;
+  right: -1px;
+}
+
+#nav-box a {
+  font-size: 30px;
+  font-family: 'Merienda', cursive;
+  font-weight: bold;
+  color: aliceblue;
+  margin: 10px;
+  text-decoration: none;
+}
+
+#hamburger {
+  border-radius: 20%;
+  height: 3rem;
+}
+
+#close {
+  display: none;
+  border-radius: 20%;
+  height: 3rem;
+}
+
+/*------------- content main ------------*/
+
+#main-content {
+  display: flex;
+  align-content: center;
+}
+
+#content-top {
+  width: 50%;
+  background-color: rgb(44,84,148);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin: 12% auto;
+  padding: 10px;
+}
+
+#content-top-contact {
+  background-color: rgb(44,84,148);
+  padding: 1%;
+  border-radius: 15px;
+}
+
+#developer-img {
+  border-radius: 25%;
+  max-height: 350px;
+}
+
+#aboutme {
+  font-family: 'Merienda', cursive;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+}
+
+#contactmain {
+  font-family: 'Merienda', cursive;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  background-color: rgb(44,84,148);
+  border-radius: 10px;
+  margin: 12% auto;
+  padding: 10px;
+}
+
+#contactmain h1, #aboutme h1 {
+  font-family: 'Kristen ITC', sans-serif;
+  color: white;
+}
+
+#contactmain a:hover{
+  color: aliceblue;
+}
+
+/*------------- Project Page ------------*/
+
+#project-content-top {
+  width: 60%;
+  background-color: rgb(44,84,148);
+  padding: 3%;
+  margin: 5% auto;
+  border-radius: 15px;
+}
+
+#project-h2 {
+  font-family: 'Kristen ITC', sans-serif;
+  color: white;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#project1 h2, #project2 h2, #project3 h2, #project4 h2 {
+  padding-top: 2%;
+  color: white;
+  text-align: center;
+}
+
+#project1 p, #project2 p, #project3 p, #project4 p {
+  color: white;
+  text-align: center;
+}
+
+#project1 img {
+  margin: 2% 5%;
+  width: 90%;
+}
+
+#project2 img {
+  margin: 2% 30%;
+  width: 40%;
+}
+
+#project3 img {
+  margin: 2% 10%;
+  width: 80%;
+}
+
+#project4 img {
+  margin: 2% 10%;
+  width: 80%;
+}
+
+#project1, #project2, #project3, #project4 {
+  background-color: rgb(0,0,0, .4);
+  border-radius: 5px;
+}
+
+/*------------- Contact Page  ------------*/
+
+#contact-content-top {
+  width: 100%;
+  background-color: rgb(44,84,148);
+  padding: 3%;
+  margin: 5% auto;
+  border-radius: 15px;
+}
 
