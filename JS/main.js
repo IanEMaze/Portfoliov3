@@ -32,7 +32,6 @@ function unfade(element) {
 
 function closeClick() {
     unfade(document.getElementById("hamburger"));
-    unfade(document.getElementById("nav-box"));
     document.getElementById("hamburger").style.display = "block";
     document.getElementById("close").style.display = "none";
     document.getElementById("nav-box").style.display = "none";
